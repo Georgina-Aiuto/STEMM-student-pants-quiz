@@ -1,0 +1,51 @@
+body {
+    background-color: #DBEAE7;
+    height: 100vh;
+}
+
+.button:hover, .button:focus, .button:active{
+    background-color: #D4DEFF;
+}
+
+/*classes */
+.button {
+    background-color: #85A0FF;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+.cornerLogo{
+    display: block;
+    width: 10%;
+}
+
+.centre {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+.quizImages {
+    width: 40%;
+}
+
+/*ids*/
+#container {
+    width: 500px;
+    margin: 50px auto;
+    background-color: #E6C8A0;
+    padding: 10px 30px;
+}
+
+#mainBody {
+    font-size: 18px;
+    text-align: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
