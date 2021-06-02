@@ -1,37 +1,42 @@
-//starting quiz button
 
-var buttonQuiz = document.getElementById("startQuiz");
-var hover = document.getElementsByClassName("button");
-var buttonHome = document.getElementById("homePage");
 var buttonSubmit = document.getElementById("submit");
+var c=0; 
+var j=0;
+var t=0;
 
 //button command
-buttonQuiz.onclick = function() {
-    location.href="quiz.html";  
+buttonSubmit.onclick = function() {
+    console.log("it works!");
+
+    var inputs = document.getElementById("quizAnswers").elements;
+    for (i=0;i < inputs.length;i++){
+     
+        if (inputs[i].type==="radio"&&inputs[i].checked){
+            console.log(inputs[i]);
+            var cat =inputs[i].value[0];
+            console.log(cat);
+            var score = parseInt(inputs[i].value[1]);
+            console.log(score);
+
+            switch(cat){
+                case "c":
+                    c+=score;
+                    console.log(c);
+                    break;
+                case "j":
+                    j+=score;
+                    console.log(j);
+                    break;
+                case "t":
+                    t+=score;
+                    console.log(t);
+                    break;
+                 
+            }
+        }
+    }
+    console.log("c is: "+c);
+    console.log("j is: "+j);
+    console.log("t is: "+t);
 };
 
-buttonHome.onclick = function() {
-    location.href="index.html";  
-};
-
-//calculator 
-
-
-
-buttonHome.onclick = function() {
-    if (jeans > chinos, jeans > tracksuits){
-        location.href="jeans-results.html";
-    }
-    else if (chinos > jeans, chinos > tracksuits){
-        location.href="chinos-results.html";
-    }
-    else if (tracksuits > jeans, tracksuits > chinos){
-        location.href="tracksuits-results.html";
-    }
-    else 
-        location.href="allrounder-results.html";
-};
-
-
-//hover state
-hover.focus();
