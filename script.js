@@ -38,5 +38,20 @@ buttonSubmit.onclick = function() {
     console.log("c is: "+c);
     console.log("j is: "+j);
     console.log("t is: "+t);
+
+    //display results
+
+    if (c>j && c>t){
+        document.getElementById("quiz").innerHTML="Chinos";
+    }
+        else if (j>c && j>t){
+            document.getElementById("quiz").innerHTML="Jeans";
+        }
+        else if (t>c && t>j){
+            document.getElementById("quiz").innerHTML="Tracksuits";
+        }
+        else {
+            document.getElementById("quiz").innerHTML="multiple";
+        }
 };
 
