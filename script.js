@@ -6,12 +6,12 @@ var t=0;
 
 //button command
 buttonSubmit.onclick = function() {
-    console.log("it works!");
 
     var inputs = document.getElementById("quizAnswers").elements;
-    for (i=0;i < inputs.length;i++){
+
+    for (i = 0; i < inputs.length; i++) {
      
-        if (inputs[i].type==="radio"&&inputs[i].checked){
+        if (inputs[i].type==="radio"&&inputs[i].checked) {
             console.log(inputs[i]);
             var cat =inputs[i].value[0];
             console.log(cat);
@@ -31,7 +31,6 @@ buttonSubmit.onclick = function() {
                     t+=score;
                     console.log(t);
                     break;
-                 
             }
         }
     }
@@ -40,18 +39,17 @@ buttonSubmit.onclick = function() {
     console.log("t is: "+t);
 
     //display results
-
     if (c>j && c>t){
         document.getElementById("quiz").innerHTML="Chinos";
     }
-        else if (j>c && j>t){
-            document.getElementById("quiz").innerHTML="Jeans";
-        }
-        else if (t>c && t>j){
-            document.getElementById("quiz").innerHTML="Tracksuits";
-        }
-        else {
-            document.getElementById("quiz").innerHTML="multiple";
-        }
+    else if (j>c && j>t){
+        document.getElementById("quiz").innerHTML="Jeans";
+    }
+    else if (t>c && t>j){
+        document.getElementById("quiz").innerHTML="Tracksuits";
+    }
+    else {
+        document.getElementById("quiz").innerHTML="multiple";
+    }
 };
 
