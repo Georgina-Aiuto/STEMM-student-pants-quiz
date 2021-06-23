@@ -40,7 +40,8 @@ buttonSubmit.onclick = function() {
 
     //display results
     if (c>j && c>t){
-        document.getElementById("quiz").innerHTML="Chinos";
+        //document.getElementById("quiz").innerHTML="Chinos";
+        location.href="chinos.html";
     }
     else if (j>c && j>t){
         document.getElementById("quiz").innerHTML="Jeans";
@@ -51,5 +52,11 @@ buttonSubmit.onclick = function() {
     else {
         document.getElementById("quiz").innerHTML="multiple";
     }
+
+    //detailed results
+    document.getElementById("j-results").innerHTML = j;
+    document.getElementById("c-results").innerHTML = c;
+    document.getElementById("t-results").innerHTML = t;
 };
+
 
