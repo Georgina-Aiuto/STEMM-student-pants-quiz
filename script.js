@@ -4,6 +4,24 @@ var c=0;
 var j=0;
 var t=0;
 
+//disabled button 
+
+var inputElements = document.getElementByClassName("radiolabel");
+for (var i = inputElements.length - 1; i>=0; --i){
+    var element = inputElements[i];
+    element.onchange = function () {
+        document.getElementById("submit").removeAttribute("disabled");
+    }
+}
+  
+//checking if the radio buttons have been clicked
+function radiobuttons (){
+    if(document.getElementsByName('question-one').checked){
+        q1 = true;
+    }
+}
+
+
 //button command
 buttonSubmit.onclick = function() {
 

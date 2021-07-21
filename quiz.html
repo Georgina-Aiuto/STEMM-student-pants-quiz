@@ -9,388 +9,201 @@
 </head>
 <body>
     <div class="quiz" id="quiz">
-        <img class="cornerLogo" src="Logo.png" alt="What STEMM student pants are you? Logo">
+        <img class="centre" src="Logo.png" alt="What STEMM student pants are you? Logo">
+        <!--questions-->
         <form id="quizAnswers" class="centre">
             <div class="question">
-                <p>1. What got you into STEMM? </p>
+                <p>1.   What got you into STEMM? </p>
                 <img class="quizImages" src="quiz-images2/question-one.jpg" alt="Scientist working on a laptop surrounded by technology.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-one">
-                            I was really good at maths, science and technology in HighSchool. Might as well stick to what you’re good at.
-                        </label>
-                        <span class="checkmark"></span>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="c2" name="question-one">
-                            My mother told me it would be best to get into a STEMM course and she is always right.
-                        </label>
-                        <span class="checkmark"></span>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j1" name="question-one">
-                            It is really interesting and I am okay at it. Although, I would rather do something more creative if getting into the world of arts wasn’t so difficult.
-                        </label>
-                        <span class="checkmark"></span>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-one">
-                            Eh. It seemed like the easiest option and I guess computers are pretty cool.
-                        </label>
-                        <span class="checkmark"></span>
-                    </div>
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-one" id="option-1a">
+                    <label class="radiolabel" for="option-1a">I was really good at maths, science and technology in HighSchool. Might as well stick to what you're good at.</label>
+                    <input type="radio" value="c2" name="question-one" id="option-1b">
+                    <label class="radiolabel" for="option-1b">My mother told me it would be best to get into a STEMM course and she is always right.</label>
+                    <input type="radio" value="j1" name="question-one" id="option-1c">
+                    <label class="radiolabel" for="option-1c">It is really interesting and I am okay at it. Although, I would rather do something more creative if getting into the world of arts wasn't so difficult.</label>
+                    <input type="radio" value="t1" name="question-one" id="option-1d">
+                    <label class="radiolabel" for="option-1d">Eh. It seemed like the easiest option and I guess computers are pretty cool.</label>
                 </div>
             </div>
 
             <div class="question">
-                <p>2. Lecture time is used for...</p>
+                <p>2.   Lecture time is used for...</p>
                 <img class="quizImages" src="quiz-images2/question-two.jpg" alt="A filled lecture hall with hundreds of students.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-two">
-                            Taking down as many notes as I can and studying super hard.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="t1" name="question-two">
-                            Playing video games at the back of the lecture room.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j1" name="question-two">
-                            Listening to the lecturer and taking down notes when I need them.    
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t2" name="question-two">
-                            Who goes to lectures? I’ll just watch them later at home.
-                        </label>
-                    </div>
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-two" id="option-2a">
+                    <label class="radiolabel" for="option-2a">Taking down as many notes as I can and studying super hard.</label>
+                    <input type="radio" value="t1" name="question-two" id="option-2b">
+                    <label class="radiolabel" for="option-2b">Playing video games at the back of the lecture room.</label>
+                    <input type="radio" value="j1" name="question-two" id="option-2c">
+                    <label class="radiolabel" for="option-2c">Listening to the lecturer and taking down notes when I need them.</label>
+                    <input type="radio" value="t2" name="question-two" id="option-2d">
+                    <label class="radiolabel" for="option-2d">Who goes to lectures? I’ll just watch them later at home.</label>
                 </div>
             </div>
 
             <div class="question">
                 <p>3.   You're in a study room with your project group and need whiteboard markers. What do you do?</p>
                 <img class="quizImages" src="quiz-images2/question-three.jpg" alt="A person looking at a concept on a whiteboard.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-three">
-                            I always carry my own!
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-three">
-                            Ask someone else in the library, they might have some?
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j2" name="question-three">
-                            I have a bunch of spare paper I can rip from my study book we can use instead.    
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-three">
-                            Oh well. Better luck next time.
-                        </label>
-                    </div>   
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-three" id="option-3a">
+                    <label class="radiolabel" for="option-3a">I always carry my own!</label>
+                    <input type="radio" value="j1" name="question-three" id="option-3b">
+                    <label class="radiolabel" for="option-3b">Ask someone else in the library, they might have some?</label>
+                    <input type="radio" value="j2" name="question-three" id="option-3c">
+                    <label class="radiolabel" for="option-3c">I have a bunch of spare paper I can rip from my study book we can use instead.</label>
+                    <input type="radio" value="t1" name="question-three" id="option-3d">
+                    <label class="radiolabel" for="option-3d">Oh well. Better luck next time.</label>
                 </div>
             </div>
 
             <div class="question">
-                <p>4. What do your grades look like?</p>
+                <p>4.   What do your grades look like?</p>
                 <img class="quizImages" src="quiz-images2/question-four.jpg" alt="A person recieving an A+ on their test scores.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-four">
-                            4.0 GPA. Not a mark lower.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-four">
-                            Alright. I can be doing better, but I’ll have to give up my hobbies if I want to study more and that is NOT happening.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="t1" name="question-four">
-                            Ps get degrees.   
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t2" name="question-four">
-                            Not great. Not great at all. I am having to repeat classes and my student debt is piling up quickly.
-                        </label>
-                    </div>   
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-four" id="option-4a">
+                    <label class="radiolabel" for="option-4a">4.0 GPA. Not a mark lower.</label>
+                    <input type="radio" value="j1" name="question-four" id="option-4b">
+                    <label class="radiolabel" for="option-4b">Alright. I can be doing better, but I’ll have to give up my hobbies if I want to study more and that is NOT happening.</label>
+                    <input type="radio" value="t1" name="question-four" id="option-4c">
+                    <label class="radiolabel" for="option-4c">Ps get degrees.</label>
+                    <input type="radio" value="t2" name="question-four" id="option-4d">
+                    <label class="radiolabel" for="option-4d">Not great. Not great at all. I am having to repeat classes and my student debt is piling up quickly.</label>
                 </div>
             </div>
+
 
             <div class="question">
                 <p>5. You’re doing a group project, but your team members have not completed their work. The deadline is fast approaching! What do you do?</p>
                 <img class="quizImages" src="quiz-images2/question-five.jpg" alt="Three students working together on a laptop.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c2" name="question-five">
-                            Take on all of their work. You will get that A+ even if it means doing it all by yourself.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="c1" name="question-five">
-                            Tell everyone that they need to get their act into gear.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j1" name="question-five">
-                            Only do your part. If the others don’t have their sections finished that is on them.  
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-five">
-                            I’m one of the ones who isn’t finishing their work.
-                        </label>
-                    </div>       
+                <div class="radiolabels">
+                    <input type="radio" value="c2" name="question-five" id="option-5a">
+                    <label class="radiolabel" for="option-5a">Take on all of their work. You will get that A+ even if it means doing it all by yourself.</label>
+                    <input type="radio" value="c1" name="question-five" id="option-5b">
+                    <label class="radiolabel" for="option-5b">Tell everyone that they need to get their act into gear.</label>
+                    <input type="radio" value="j1" name="question-five" id="option-5c">
+                    <label class="radiolabel" for="option-5c">Only do your part. If the others don’t have their sections finished that is on them.</label>
+                    <input type="radio" value="t1" name="question-five" id="option-5d">
+                    <label class="radiolabel" for="option-5d">I’m one of the ones who isn’t finishing their work.</label>
                 </div>
             </div>
 
             <div class="question">
                 <p>6. You finally have a couple hours break in between classes. What do you do?</p>
                 <img class="quizImages" src="quiz-images2/question-six.jpg" alt="Four students having a picnic with a dog.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-six">
-                            Study, work on my assignments! I can’t let any of my time be wasted.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-six">
-                            I’ll do the assignments I need to do, but if I have any time I’ll hang out with my friends.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j2" name="question-six">
-                            Go to work, focus on my hobbies, or hang out with friends. Assignments can wait until later. 
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-six">
-                            Time to game in the library.
-                        </label>
-                    </div>       
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-six" id="option-6a">
+                    <label class="radiolabel" for="option-6a">Study, work on my assignments! I can’t let any of my time be wasted.</label>
+                    <input type="radio" value="j1" name="question-six" id="option-6b">
+                    <label class="radiolabel" for="option-6b">I’ll do the assignments I need to do, but if I have any time I’ll hang out with my friends.</label>
+                    <input type="radio" value="j2" name="question-six" id="option-6c">
+                    <label class="radiolabel" for="option-6c">Go to work, focus on my hobbies, or hang out with friends. Assignments can wait until later.</label>
+                    <input type="radio" value="t1" name="question-six" id="option-6d">
+                    <label class="radiolabel" for="option-6d">Time to game in the library.</label>
                 </div>
             </div>
             
             <div class="question">
                 <p>7. If you weren’t doing a STEMM subject in university, what degree would you study?</p>
                 <img class="quizImages" src="quiz-images2/question-seven.jpg" alt="A lecture hall filled wuth studets sitting down.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-seven">
-                            Anything my mother suggested to me, after all she knows best.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="t1" name="question-seven">
-                            Dunno, but I hope it doesn’t involve physical exercise.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j1" name="question-seven">
-                            Fine arts, music, or anything creative. 
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t2" name="question-seven">
-                            I will probably be fine with Centrelink.
-                        </label>
-                    </div>  
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-seven" id="option-7a">
+                    <label class="radiolabel" for="option-7a">Anything my mother suggested to me, after all she knows best.</label>
+                    <input type="radio" value="t1" name="question-seven" id="option-7b">
+                    <label class="radiolabel" for="option-7b">Dunno, but I hope it doesn’t involve physical exercise.</label>
+                    <input type="radio" value="j1" name="question-seven" id="option-7c">
+                    <label class="radiolabel" for="option-7c">Fine arts, music, or anything creative.</label>
+                    <input type="radio" value="t2" name="question-seven" id="option-7d">
+                    <label class="radiolabel" for="option-7d">I will probably be fine with Centrelink.</label>
                 </div>
             </div>
                 
             <div class="question">
                 <p>8.   Is maths a fun or easy subject for you?</p>
                 <img class="quizImages" src="quiz-images2/question-eight.jpg" alt="Maths intergrals written on a whiteboard.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c2" name="question-eight">
-                            I love maths. Pytag is amazing. A true role model.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-eight">
-                            It is okay. I’d rather not, but I understand why I need it for my other subjects to make sense.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="c1" name="question-eight">
-                            I find it difficult, but the challenge is great! 
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-eigt">
-                            Do not care, as long as I pass. I will study maths at the very minimum requirement.
-                        </label>
-                    </div> 
+                <div class="radiolabels">
+                    <input type="radio" value="c2" name="question-eight" id="option-8a">
+                    <label class="radiolabel" for="option-8a">I love maths. Pythag is amazing. A true role model.</label>
+                    <input type="radio" value="j1" name="question-eight" id="option-8b">
+                    <label class="radiolabel" for="option-8b">It is okay. I’d rather not, but I understand why I need it for my other subjects to make sense.</label>
+                    <input type="radio" value="c1" name="question-eight" id="option-8c">
+                    <label class="radiolabel" for="option-8c">I find it difficult, but the challenge is great!</label>
+                    <input type="radio" value="t1" name="question-eight" id="option-8d">
+                    <label class="radiolabel" for="option-8d">Do not care, as long as I pass. I will study maths at the very minimum requirement.</label>
                 </div>
             </div>
+
 
             <div class="question">
                 <p>9. What motivates you to keep on studying STEMM? Anything that keeps you inspired?</p>
                 <img class="quizImages" src="quiz-images2/question-nine.jpg" alt="A person writing up derivatives on a whiteboard.">
-                <div class="inputs centre">  
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-nine">
-                            Getting a well-paid and enjoyable degree! Something everyone I know can be proud of me for.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-nine">
-                            I am genuinely interested in how it can change the world around me and I want to be a part of that story that shifts our culture in history.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j2" name="question-nine">
-                            The explosions are pretty cool. Or the icky gross biology bits. Or the strange nature of both is and isn’t in quantum physics. I just want to study all the weird wacky and wonderful parts of STEMM.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-nine">
-                            I am not interested in anything else much, so might as well stick to what I know.
-                        </label>
-                    </div> 
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-nine" id="option-9a">
+                    <label class="radiolabel" for="option-9a">Getting a well-paid and enjoyable degree! Something everyone I know can be proud of me for.</label>
+                    <input type="radio" value="j1" name="question-nine" id="option-9b">
+                    <label class="radiolabel" for="option-9b">I am genuinely interested in how it can change the world around me and I want to be a part of that story that shifts our culture in history.</label>
+                    <input type="radio" value="j2" name="question-nine" id="option-9c">
+                    <label class="radiolabel" for="option-9c">The explosions are pretty cool. Or the icky gross biology bits. Or the strange nature of both is and isn’t in quantum physics. I just want to study all the weird wacky and wonderful parts of STEMM.</label>
+                    <input type="radio" value="t1" name="question-nine" id="option-9d">
+                    <label class="radiolabel" for="option-9d">I am not interested in anything else much, so might as well stick to what I know.</label>
                 </div>
             </div>
+   
 
             <div class="question">
                 <p>10. What motivates you to keep on studying STEMM? Anything that keeps you inspired?</p>
                 <img class="quizImages" src="quiz-images2/question-ten.jpg" alt="A person using a highlighter and studying.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c2" name="question-ten">
-                            Classical music. Proven to be the best for study.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-ten">
-                            Alternative music. Something upbeat or intense to keep me focused and awake.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="t1" name="question-ten">
-                            Video game soundtracks. My gamer buddies support me even outside of the battlefield.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="c1" name="question-ten">
-                            Silence. I need to focus.
-                        </label>
-                    </div> 
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-ten" id="option-10a">
+                    <label class="radiolabel" for="option-10a">Classical music. Proven to be the best for study.</label>
+                    <input type="radio" value="j1" name="question-ten" id="option-10b">
+                    <label class="radiolabel" for="option-10b">Alternative music. Something upbeat or intense to keep me focused and awake.</label>
+                    <input type="radio" value="j2" name="question-ten" id="option-10c">
+                    <label class="radiolabel" for="option-10c">Video game soundtracks. My gamer buddies support me even outside of the battlefield.</label>
+                    <input type="radio" value="t1" name="question-ten" id="option-10d">
+                    <label class="radiolabel" for="option-10d">Silence. I need to focus.</label>
                 </div>
             </div>
+              
 
             <div class="question">
                 <p>11. Have you ever pulled an all nighter before?</p>
                 <img class="quizImages" src="quiz-images2/question-eleven.jpg" alt="A person with messy hair looking stressed over a laptop.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-eleven">
-                            No way! I schedule all of my studying perfectly so that I don’t risk harming my health.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-eleven">
-                            Yeah, I got caught up on my friends and hobbies and forgot about my assignment.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="t1" name="question-eleven">
-                            No. Not worth my time, I’ll just not submit the assignment.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t2" name="question-eleven">
-                            Yes, but not to study. For video gaming and twitch streaming of course!
-                        </label>
-                    </div> 
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-eleven" id="option-11a">
+                    <label class="radiolabel" for="option-11a">No way! I schedule all of my studying perfectly so that I don’t risk harming my health.</label>
+                    <input type="radio" value="j1" name="question-eleven" id="option-11b">
+                    <label class="radiolabel" for="option-11b">Yeah, I got caught up on my friends and hobbies and forgot about my assignment.</label>
+                    <input type="radio" value="t1" name="question-eleven" id="option-11c">
+                    <label class="radiolabel" for="option-11c">No. Not worth my time, I’ll just not submit the assignment.</label>
+                    <input type="radio" value="t2" name="question-eleven" id="option-11d">
+                    <label class="radiolabel" for="option-11d">Yes, but not to study. For video gaming and twitch streaming of course!</label>
                 </div>
             </div>
+               
 
             <div class="question">
                 <p>12. That was a tough exam. What do you do now?</p>
                 <img class="quizImages" src="quiz-images2/question-twelve.jpg" alt="An exam.">
-                <div class="inputs centre">
-                    <div>
-                        <label class="container">
-                            <input type="radio" value="c1" name="question-twelve">
-                            Go home and start preparing for the next semester.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container2">
-                            <input type="radio" value="j1" name="question-twelve">
-                            Celebrate at a friend’s house! We earned it.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container3">
-                            <input type="radio" value="j2" name="question-twelve">
-                            Get completely plastered at a local pub, bar or some dodgy park right next to the university.
-                        </label>
-                    </div>
-                    <div>
-                        <label class="container4">
-                            <input type="radio" value="t1" name="question-twelve">
-                            Go straight home. I do not want to see the people in my class ever again.
-                        </label>
-                    </div> 
+                <div class="radiolabels">
+                    <input type="radio" value="c1" name="question-twelve" id="option-12a">
+                    <label class="radiolabel" for="option-12a">Go home and start preparing for the next semester.</label>
+                    <input type="radio" value="j1" name="question-twelve" id="option-12b">
+                    <label class="radiolabel" for="option-12b">Celebrate at a friend’s house! We earned it.</label>
+                    <input type="radio" value="j2" name="question-twelve" id="option-12c">
+                    <label class="radiolabel" for="option-12c">Get completely plastered at a local pub, bar or some dodgy park right next to the university.</label>
+                    <input type="radio" value="t1" name="question-twelve" id="option-12d">
+                    <label class="radiolabel" for="option-12d">Go straight home. I do not want to see the people in my class ever again.</label>
                 </div>
             </div>
         </form>
 
         <!--buttons for homepage or submit quiz-->
-        <a href="index.html" style="text-decoration: none;" id="homePage" class="button centre">Home Page</a>
-        <button id="submit" class="button centre">Submit Quiz</button>
+
+        <div class="buttons">
+            <a href="index.html" style="text-decoration: none;" id="homePage" class="button">Home Page</a>
+            <button id="submit" class="button" disabled>Submit Quiz</button>
+        </div>
     </div>
 
     <script type="text/javascript" src="script.js"></script>
