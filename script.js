@@ -5,14 +5,13 @@ var j=0;
 var t=0;
 
 //disabled button 
-
-var inputElements = document.getElementByClassName("radiolabel");
-for (var i = inputElements.length - 1; i>=0; --i){
-    var element = inputElements[i];
-    element.onchange = function () {
-        document.getElementById("submit").removeAttribute("disabled");
+document.body.addEventListener('change', function(){
+    var radiobuttons = document.querySelectorAll('input[type=radio]:checked')
+    console.log(radiobuttons.length)
+    if(radiobuttons.length==12){
+        buttonSubmit.disabled = false;
     }
-}
+});
   
 //checking if the radio buttons have been clicked
 function radiobuttons (){
@@ -59,17 +58,28 @@ buttonSubmit.onclick = function() {
     //display results
     if (c>j && c>t){
         //document.getElementById("quiz").innerHTML="Chinos";
-        location.href="chinos.html";
+        document.getElementById("quiz").hidden=true;
+        document.getElementById("chinos").removeAttribute("hidden");
+        document.getElementById("results").removeAttribute("hidden");
+       
     }
     else if (j>c && j>t){
-        document.getElementById("quiz").innerHTML="Jeans";
+        document.getElementById("quiz").hidden=true;
+        document.getElementById("jeans").removeAttribute("hidden");
+        document.getElementById("results").removeAttribute("hidden");
     }
     else if (t>c && t>j){
-        document.getElementById("quiz").innerHTML="Tracksuits";
+        document.getElementById("quiz").hidden=true;
+        document.getElementById("tracksuits").removeAttribute("hidden");
+        document.getElementById("results").removeAttribute("hidden");
     }
     else {
-        document.getElementById("quiz").innerHTML="multiple";
+        document.getElementById("quiz").hidden=true;
+        document.getElementById("multiple").removeAttribute("hidden");
+        document.getElementById("results").removeAttribute("hidden");
     }
+
+    window.scrollTo(0,0);
 
     //detailed results
     document.getElementById("j-results").innerHTML = j;
@@ -78,3 +88,5 @@ buttonSubmit.onclick = function() {
 };
 
 
+//hide div/results when button is clicked and shows the results. 
+//class called "visisable"
